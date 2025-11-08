@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AmnilMart E-commerce Mockup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #233283;
+      padding: 10px 0;
+    }
+
+    nav a {
+      background-color: black;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 6px 14px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+
+    nav a:hover {
+      background: red;
+    }
+
+    .hero {
+    position: relative;
+    padding: 80px 0 60px;
+    text-align: center;
+    color: #fff;
+    background: url('https://media.istockphoto.com/id/1398174514/vector/shop-online-e-commerce-web-banner-on-red-background-various-shopping-icons.jpg?s=1024x1024&w=is&k=20&c=t2r7yo3oHn6YUXHK_2-uq0x3xRQdYS2bj-Eo1UXEghg=') center/cover no-repeat;
+    }
+
+    .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(44, 68, 170, 0.50); /* semi-transparent overlay */
+    z-index: 0;
+    }
+    .hero-content {
+    position: relative;
+    z-index: 1;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="bg-danger py-3 text-center text-white">
+            <h1 class="h2 mb-0">AmnilMart.com</h1>
+          </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav gap-2">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Category</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero d-flex align-items-center justify-content-center">
+        <div class="container hero-content">
+          <h2 class="display-3 fw-bold text-dark">Hajur ko Sathi<br>Amnil Mart</h2>
+          <p class="lead">Grab your favourite products from the comfort of your home with cheap price.</p>
+          <form class="d-flex justify-content-center mb-4" role="search" aria-label="Search for products">
+            <input type="search" class="form-control w-50 w-md-25 me-2" placeholder="Search for products...">
+            <button type="submit" class="bg-danger btn btn-primary fw-bold text-dark">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <main class="container">
+        <section class="products mt-5 mb-4">
+          <h3 class="mb-4 text-center text-danger">Our Most Sold Items</h3>
+          <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+              <div class="card text-center shadow-sm h-100">
+                <div class="product-img mt-3">
+                  <img src="https://pngimg.com/uploads/macbook/macbook_PNG80.png" alt="MacBook Pro" style="width:180px; height:180px; object-fit:contain;">
+                </div>
+                
+                <div class="card-body">
+                  <h4 class="card-title">MacBook Pro</h4>
+                  <div class="d-flex justify-content-center gap-2 mt-3">
+                    <button class="btn btn-primary">Buy</button>
+                    <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card text-center shadow-sm h-100">
+                <div class="product-img mt-3">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoI6Rxkxtp0NzEosUS0H4nf5XHFGfJf8e6aw&s" alt="iPhone 13" style="width:180px; height:180px; object-fit:contain;">
+
+                </div>
+                
+                
+                <div class="card-body">
+                  <h4 class="card-title">iPhone 13</h4>
+                  <div class="d-flex justify-content-center gap-2 mt-3">
+                    <button class="btn btn-primary">Buy</button>
+                    <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card text-center shadow-sm h-100">
+                <div class="product-img mt-3">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_2Auf4LiNqDzY1LW4LvbVTa6uAO2cKUb-Q&s" alt="iPhone 13" style="width:180px; height:180px; object-fit:contain;">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">RayBan Glasses</h4>
+                  <div class="d-flex justify-content-center gap-2 mt-3">
+                    <button class="btn btn-primary">Buy</button>
+                    <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="testimonials bg-secondary py-4 mb-4">
+          <div class="testimonial mx-auto text-white">
+            <blockquote class="blockquote mb-0">
+              “AmnilMart is where I go to for cheap and faster delivery.”     
+              <footer class="blockquote-footer mt-2 text-dark">
+                <span class="testimonial-author">- Bibash Acharya</span>
+              </footer>
+            </blockquote>
+          </div>
+        </section>
+        
+        
+      </main>
+
+      <footer class="bg-danger text-white py-3 mt-4 text-center">
+        &copy; 2025 AmnilMart
+      </footer>    
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
