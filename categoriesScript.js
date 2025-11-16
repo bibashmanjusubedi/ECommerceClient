@@ -27,16 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
           // Create category card element
           const colDiv = document.createElement('div');
           colDiv.className = 'col';
-
+          
           colDiv.innerHTML = `
-            <div class="card h-100 text-center shadow-sm">
-              <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                <!-- Placeholder icon -->
-                <img src="${productImageSrc}" alt="${category.name}" style="width:64px;height:64px;">
-                <h5 class="mt-3 card-title">${category.name}</h5>
+          <a href="specificCategory.html?categoryId=${category.categoryId}" style="text-decoration:none; color:inherit;">
+              <div class="card h-100 text-center shadow-sm">
+                  <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                      <img src="${productImageSrc}" alt="${category.name}" style="width:64px;height:64px;">
+                      <h5 class="mt-3 card-title">${category.name}</h5>
+                  </div>
               </div>
-            </div>
-          `;
+          </a>
+      `;
 
           categoriesContainer.appendChild(colDiv);
         });
